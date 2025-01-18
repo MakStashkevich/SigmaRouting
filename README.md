@@ -1,9 +1,6 @@
-### 🚀 Learn how to build and use this package: https://www.swiftful-thinking.com/offers/REyNLwwH
+# SigmaRouting Σ
 
-
-# SwiftfulRouting  🤙
-
-SwiftfulRouting is a native, declarative framework that enables programmatic navigation in SwiftUI applications. 
+SigmaRouting is a native, declarative framework that enables programmatic navigation in SwiftUI applications. 
 
 - Sample project: https://github.com/SwiftfulThinking/SwiftfulRoutingExample
 - YouTube Tutorial: https://www.youtube.com/watch?v=zKfhv-Yds4g&list=PLwvDm4VfkdphPRGbtiY-X3IZsUXFi6595&index=6
@@ -36,13 +33,13 @@ Sample project: https://github.com/SwiftfulThinking/SwiftfulRoutingExample
 Add the package to your Xcode project.
 
 ```
-https://github.com/SwiftfulThinking/SwiftfulRouting.git
+https://github.com/makstashkevich/SigmaRouting.git
 ```
 
 Import the package
 
 ```swift
-import SwiftfulRouting
+import SigmaRouting
 ```
 
 Add a `RouterView` at the top of your view heirarchy. A `RouterView` will embed your view into a Navigation heirarchy and add modifiers to support all potential segues.
@@ -417,9 +414,9 @@ router.showBasicModal {
 
 Community contributions are encouraged! Please ensure that your code adheres to the project's existing coding style and structure. Most new features are likely to be derivatives of existing features, so many of the existing ViewModifiers and Bindings should be reused.
 
-- [Open an issue](https://github.com/SwiftfulThinking/SwiftfulRouting/issues) for issues with the existing codebase.
-- [Open a discussion](https://github.com/SwiftfulThinking/SwiftfulRouting/discussions) for new feature requests.
-- [Submit a pull request](https://github.com/SwiftfulThinking/SwiftfulRouting/pulls) when the feature is ready.
+- [Open an issue](https://github.com/makstashkevich/SigmaRouting/issues) for issues with the existing codebase.
+- [Open a discussion](https://github.com/makstashkevich/SigmaRouting/discussions) for new feature requests.
+- [Submit a pull request](https://github.com/makstashkevich/SigmaRouting/pulls) when the feature is ready.
 
 Upcoming features:
 
