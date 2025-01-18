@@ -24,10 +24,12 @@ struct ConfirmationDialogViewModifier: ViewModifier {
                     }
                 }
         } else {
+            #if os(iOS)
             content
                 .actionSheet(isPresented: Binding(ifNotNil: item), content: {
                     item.wrappedValue?.actionSheet ?? ActionSheet(title: Text("Error"))
                 })
+            #endif
         }
     }
     

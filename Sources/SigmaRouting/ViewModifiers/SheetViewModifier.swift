@@ -40,7 +40,7 @@ extension View {
         sheetSelection: Binding<PresentationDetentTransformable>,
         sheetSelectionEnabled: Bool,
         showDragIndicator: Bool) -> some View {
-            if #available(iOS 16, *) {
+            if #available(iOS 16, *), #available(macOS 13.0, *) {
                 if sheetSelectionEnabled {
                     self
                         .presentationDetents(sheetDetents.setMap({ $0.asPresentationDetent }), selection: Binding(selection: sheetSelection))

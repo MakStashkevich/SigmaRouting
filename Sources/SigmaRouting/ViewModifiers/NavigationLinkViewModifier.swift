@@ -17,7 +17,7 @@ struct NavigationLinkViewModifier: ViewModifier {
     @State var shouldAddNavigationDestination: Bool
 
     func body(content: Content) -> some View {
-        if #available(iOS 16.0, *) {
+        if #available(iOS 16.0, *), #available(macOS 13.0, *) {
             // If we are continuing an existing stack, don't need to add another .navigationDestination modifier
             if shouldAddNavigationDestination {
                 ZStack {

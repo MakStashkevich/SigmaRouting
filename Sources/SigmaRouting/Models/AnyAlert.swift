@@ -48,6 +48,7 @@ struct AnyAlert: Identifiable {
     }
     
     /// iOS 14 support for ConfirmationDialog
+    #if os(iOS)
     var actionSheet: ActionSheet {
         let titleView = Text(title)
 
@@ -58,4 +59,5 @@ struct AnyAlert: Identifiable {
 
         return ActionSheet(title: titleView, message: subtitleView, buttons: buttonsiOS13 ?? [])
     }
+    #endif
 }

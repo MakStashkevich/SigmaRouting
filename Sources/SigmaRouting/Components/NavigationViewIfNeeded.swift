@@ -19,7 +19,7 @@ struct NavigationViewIfNeeded<Content:View>: View {
     
     @ViewBuilder var body: some View {
         if addNavigationView {
-            if #available(iOS 16.0, *) {
+            if #available(iOS 16.0, *), #available(macOS 13.0, *) {
                 NavigationStackTransformable(segueOption: segueOption, onDismissLastPush: onDismissLastPush, screens: $screens) {
                     content
                 }
@@ -29,7 +29,7 @@ struct NavigationViewIfNeeded<Content:View>: View {
                 }
             }
         } else {
-            if #available(iOS 16.0, *) {
+            if #available(iOS 16.0, *), #available(macOS 13.0, *) {
                 // onChangeOfPresentationMode is NOT required for iOS 16 bc onDismiss will trigger within NavigationStackTransformable
                 content
             } else {
@@ -40,6 +40,7 @@ struct NavigationViewIfNeeded<Content:View>: View {
     }
 }
 
+@available(macOS 13.0, *)
 @available(iOS 16, *)
 struct NavigationStackTransformable<Content:View>: View {
     

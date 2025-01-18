@@ -151,7 +151,7 @@ public struct AnyRouter: Router {
 
 }
 
-let printPrefix = "🕊️ SwiftfulRouting 🕊️ -> "
+let printPrefix = "Σ SigmaRouting -> "
 
 struct MockRouter: Router {
     

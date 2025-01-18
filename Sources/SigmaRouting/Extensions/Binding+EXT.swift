@@ -53,6 +53,7 @@ extension Binding where Value == Array<AnyDestination> {
     
 }
 
+@available(macOS 13.0, *)
 @available(iOS 16, *)
 extension Binding where Value == PresentationDetent {
     
